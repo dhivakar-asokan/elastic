@@ -22,10 +22,16 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    - name: Run script file
+    - name: Run Engine call
       run: |
          chmod +x scripts/ping.sh
-         scripts/ping.sh
+         scripts/engine.sh
+      shell: bash
+    - uses: actions/checkout@v2
+    - name: Run admin
+      run: |
+         chmod +x scripts/ping.sh
+         scripts/admin.sh
       shell: bash
       
       
