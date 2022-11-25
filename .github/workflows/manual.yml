@@ -24,13 +24,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run Engine call
       run: |
-         chmod +x scripts/ping.sh
+         chmod +x scripts/engine.sh
          scripts/engine.sh
       shell: bash
-    - uses: actions/checkout@v2
     - name: Run admin
       run: |
-         chmod +x scripts/ping.sh
+         chmod +x scripts/admin.sh
          scripts/admin.sh
       shell: bash
       
